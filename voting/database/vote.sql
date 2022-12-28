@@ -129,16 +129,17 @@ CREATE TABLE `user` (
   `password` varchar(100) NOT NULL,
   `firstname` varchar(100) NOT NULL,
   `lastname` varchar(100) NOT NULL,
-  `Phone` int(100) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `Phone` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `otp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `firstname`, `lastname`, `Phone`, `email`) VALUES
-(1, 'admin', 'admin', 'Charles', 'Kupa', 977112458, 'Kapiya@gmail.com');
+INSERT INTO `user` (`user_id`, `username`, `password`, `firstname`, `lastname`, `Phone`, `email`, `otp`) VALUES
+(1, 'admin', 'admin', 'Charles', 'Kupa', '+233256713892', 'yassinehamadou1@gmail.com', 0);
 
 -- --------------------------------------------------------
 
