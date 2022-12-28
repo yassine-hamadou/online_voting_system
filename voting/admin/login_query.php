@@ -1,15 +1,12 @@
 <?php
 	require_once 'dbcon.php'; // The mysql database connection script
     require '../vendor/autoload.php';
-    use Twilio\Rest\Client;
 
 
 
 
 if(isset($_POST['login']))
 	{
-        $account_sid = 'ACb53b02eadc84a70cc92725dc103a1e21';
-        $auth_token = 'd7d39ed5a9bf02d9cdc2d2ddbe2b76d0';
 		$username=$_POST['username'];
 		$password=$_POST['password'];
 		$login_id = $_POST['login_id'];
@@ -61,9 +58,7 @@ if(isset($_POST['login']))
                                 <?php
                             }
 
-                        } catch (\Twilio\Exceptions\ConfigurationException $e) {
-                            echo "Error: " . $e->getMessage();
-                        } catch (\Twilio\Exceptions\TwilioException $e) {
+                        } catch (Exception $e) {
                             echo "Error: " . $e->getMessage();
                         }
 			}else{

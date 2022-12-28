@@ -139,7 +139,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `firstname`, `lastname`, `Phone`, `email`, `otp`) VALUES
-(1, 'admin', 'admin', 'Charles', 'Kupa', '+233256713892', 'yassinehamadou1@gmail.com', 0);
+(1, 'admin', 'admin', 'Charles', 'Kupa', '+233260861335', 'yassinehamadou1@gmail.com', 0);
 
 -- --------------------------------------------------------
 

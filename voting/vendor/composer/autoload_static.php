@@ -36,10 +36,6 @@ class ComposerStaticInit426a159d1e412d0e614a76e2319c986b
             'Vonage\\NexmoBridge\\' => 19,
             'Vonage\\' => 7,
         ),
-        'T' => 
-        array (
-            'Twilio\\' => 7,
-        ),
         'S' => 
         array (
             'StellaMaris\\Clock\\' => 18,
@@ -75,10 +71,6 @@ class ComposerStaticInit426a159d1e412d0e614a76e2319c986b
         'Vonage\\' => 
         array (
             0 => __DIR__ . '/..' . '/nexmo/client-core/src',
-        ),
-        'Twilio\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/twilio/sdk/src/Twilio',
         ),
         'StellaMaris\\Clock\\' => 
         array (
