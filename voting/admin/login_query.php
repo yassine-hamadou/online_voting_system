@@ -34,15 +34,18 @@ if(isset($_POST['login']))
                             $query = "UPDATE `user` SET `otp` = '$otp' WHERE `username` = '$username'";
                             $result = $conn->query($query);
                             if ($result) {
-                                $client = new Client($account_sid, $auth_token);
-                                $client->messages->create(
-                                    $fetch['Phone'], // Text this number
-                                    array(
-                                        'from' => '+12183792414', // From the free Twilio number
-                                        "messagingServiceSid" => "MGa99e7755ff21b65eb61aa72b8aecd445",
-                                        'body' => 'Hello Admin! In order to access your account, kindly provide this OTP code: ' . $otp
-                                    )
-                                );
+                                $apiKey = '';
+                                $apiSecret = '';
+
+
+                                $basic  = new \Nexmo\Client\Credentials\Basic($apiKey, $apiSecret);
+                                $client = new \Nexmo\Client($basic);
+
+                                $message = $client->message()->send([
+                                    'to' => $fetch['Phone'],
+                                    'from' => '+14157386102',
+                                    'text' => 'Hello Admin! In order to access your account, kindly provide this OTP code: ' . $otp . '\n\nThank you!\n\n'
+                                ]);
                                 ?>
                                 <script type="text/javascript">
                                 alert('OTP sent to your phone');
