@@ -3,12 +3,13 @@
     require '../vendor/autoload.php';
     use Twilio\Rest\Client;
 
-    $account_sid = 'ACb53b02eadc84a70cc92725dc103a1e21';
-    $auth_token = '40a73442e8212420c45a96be782802b1';
+
 
 
 if(isset($_POST['login']))
 	{
+        $account_sid = 'ACb53b02eadc84a70cc92725dc103a1e21';
+        $auth_token = 'd7d39ed5a9bf02d9cdc2d2ddbe2b76d0';
 		$username=$_POST['username'];
 		$password=$_POST['password'];
 		$login_id = $_POST['login_id'];
