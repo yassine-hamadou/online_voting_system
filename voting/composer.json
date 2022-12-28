@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/voting",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "sip",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "twilio/sdk": "^6.44"
+  }
+}

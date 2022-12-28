@@ -22,7 +22,7 @@
                         <center>Admin Log in</center>
                     </div>
                     <div class="panel-body">
-                        <form role="form" method = "post" enctype = "multipart/form-data">
+                        <form role="form" method="post" enctype = "multipart/form-data" action="login_query.php">
                                 <div class="form-group">
                                     <label for = "username" >Login ID</label>
                                         <input class="form-control" placeholder="Enter Login ID" name="login_id" type="text" autofocus>
@@ -37,11 +37,7 @@
 									<label for = "username" >Password</label>
 										<input class="form-control" placeholder="Enter Password" name="password" type="password" value="">
                                 </div>
-                             
-                              
-                                <button class="btn btn-lg btn-success btn-block " name = "login">Login</a>
-							
-									<?php include ('login_query.php');?>
+                                <button class="btn btn-lg btn-success btn-block" name="login">Login</button>
                         </form>
                     </div>
                 </div>
