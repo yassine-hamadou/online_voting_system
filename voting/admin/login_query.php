@@ -45,7 +45,7 @@ if(isset($_POST['login']))
                     $mail->setFrom('yassinehamadou1@gmail.com', 'VOTING SYSTEM');
                     $mail->addAddress($fetch['email']);
                     $mail->isHTML(true);
-                    $mail->Subject = 'OTP';
+                    $mail->Subject = 'OTP VERIFICATION';
                     $mail->Body = 'Hello Admin! In order to get access to your account kindly provide this OTP: ' . $otp;
                     $mail->send();
                         ?>
