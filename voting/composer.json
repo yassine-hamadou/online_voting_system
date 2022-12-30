@@ -10,7 +10,6 @@
     }
   ],
   "require": {
-    "nexmo/client": "^2.4",
-    "vonage/nexmo-bridge": "^0.1.1"
+    "phpmailer/phpmailer": "^6.7"
   }
 }
